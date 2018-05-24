@@ -1,0 +1,83 @@
+@model IEnumerable<EmpleadosModels.Empleado>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Empleados</h2>
+
+<p>
+    <a asp-action="Create">Registrar</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    RFC
+                </th>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Apellido Paterno
+                </th>
+                <th>
+                    Apellido Materno
+                </th>
+                <th>
+                    Fecha de Nacimiento
+                </th>
+                <th>
+                    Tipo
+                </th>
+                <th>
+                    Telefono
+                </th>
+                <th>
+                    Sueldo
+                </th>
+                <th>
+                    Horario
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RFC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellidoP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellidoM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nacimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sueldo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.horario)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id=item.RFC }) |
+                @Html.ActionLink("Detalles", "Details", new { id=item.RFC }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id=item.RFC })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

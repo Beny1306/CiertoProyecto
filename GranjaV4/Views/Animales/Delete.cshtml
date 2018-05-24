@@ -1,0 +1,25 @@
+@model AnimalesModels.eliminarAnimal
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Eliminar</h2>
+
+<h3>¿Estas seguro de que quieres eliminar esto?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Id
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="submit" value="Eliminar" class="btn btn-default" /> |
+        <a asp-action="Index">Regresar</a>
+    </form>
+</div>

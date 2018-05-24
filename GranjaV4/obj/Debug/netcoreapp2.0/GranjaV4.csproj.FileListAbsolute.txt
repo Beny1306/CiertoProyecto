@@ -1,0 +1,12 @@
+C:\Users\beny_\Desktop\Version4\GranjaV4\bin\Debug\netcoreapp2.0\app.db
+C:\Users\beny_\Desktop\Version4\GranjaV4\bin\Debug\netcoreapp2.0\GranjaV4.deps.json
+C:\Users\beny_\Desktop\Version4\GranjaV4\bin\Debug\netcoreapp2.0\GranjaV4.runtimeconfig.json
+C:\Users\beny_\Desktop\Version4\GranjaV4\bin\Debug\netcoreapp2.0\GranjaV4.runtimeconfig.dev.json
+C:\Users\beny_\Desktop\Version4\GranjaV4\bin\Debug\netcoreapp2.0\GranjaV4.dll
+C:\Users\beny_\Desktop\Version4\GranjaV4\bin\Debug\netcoreapp2.0\GranjaV4.pdb
+C:\Users\beny_\Desktop\Version4\GranjaV4\obj\Debug\netcoreapp2.0\GranjaV4.csproj.CoreCompileInputs.cache
+C:\Users\beny_\Desktop\Version4\GranjaV4\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\beny_\Desktop\Version4\GranjaV4\obj\Debug\netcoreapp2.0\GranjaV4.AssemblyInfoInputs.cache
+C:\Users\beny_\Desktop\Version4\GranjaV4\obj\Debug\netcoreapp2.0\GranjaV4.AssemblyInfo.cs
+C:\Users\beny_\Desktop\Version4\GranjaV4\obj\Debug\netcoreapp2.0\GranjaV4.dll
+C:\Users\beny_\Desktop\Version4\GranjaV4\obj\Debug\netcoreapp2.0\GranjaV4.pdb

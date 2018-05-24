@@ -1,0 +1,43 @@
+@model EmpleadosModels.eliminarEmpleado
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Eliminar</h2>
+
+<h3>¿Estas seguro de que deseas eliminar esto?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            RFC
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RFC)
+        </dd>
+        <dt>
+            Nombre
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+        <dt>
+            Apellido Paterno
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.apellidoP)
+        </dd>
+        <dt>
+            Apellido Materno
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.apellidoM)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="submit" value="Eliminar" class="btn btn-default" /> |
+        <a asp-action="Index">Regresar</a>
+    </form>
+</div>

@@ -1,0 +1,65 @@
+@model IEnumerable<VeterinariosModel.Veterinario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Veterinarios</h2>
+
+<p>
+    <a asp-action="Create">Registrar</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    RFC
+                </th>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Apellido Paterno
+                </th>
+                <th>
+                    Apellido Materno
+                </th>
+                <th>
+                    Especialidad
+                </th>
+                <th>
+                    Telefono
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RFC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellidoP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellidoM)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.especialidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telefono)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id=item.RFC }) |
+                @Html.ActionLink("Detalles", "Details", new { id=item.RFC }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id=item.RFC })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
